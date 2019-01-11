@@ -274,6 +274,23 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    });
  
  
+
+
+
+
+client.on('message', message => {
+	if(message.content === "E!invite") {
+		message.author.send(`
+		شكرأ لاستخدامك لبوتنا
+		رابط اضافة البوت:
+		https://discordapp.com/api/oauth2/authorize?client_id=533305158315278336&permissions=8&scope=bot
+		Bot Created By IxRawan`);
+	}
+});
+
+
+
+
  
  
 client.login(process.env.BOT_TOKEN);
