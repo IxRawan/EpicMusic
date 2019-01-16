@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
  
 client.on('ready', () => {
+  client.user.setGame('E!help','https://www.twitch.tv/IDK');
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
   console.log('')
